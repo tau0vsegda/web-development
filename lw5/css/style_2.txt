@@ -1,0 +1,27 @@
+body
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.div_common
+{
+    display: inline-flex;
+    margin: 20px;
+    /*margin-top: 100px;*/
+}
+.div_1
+{
+    width: 330px;
+    margin-right: 60px;    
+}
+img
+{
+    width: 330px;
+    border-radius: 5px;
+}
+.div_2
+{
+    width: 570px;
+    margin-left: 60px;   
+}
