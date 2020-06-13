@@ -1,6 +1,8 @@
+
+
 function drawPerson4() {
-  const canvas = document.getElementById('person4')
-  const person4 = canvas.getContext('2d')
+  const canvas = document.getElementById('person4');
+  const person4 = canvas.getContext('2d');
 
   //тело
   person4.fillStyle = "#f46600"
