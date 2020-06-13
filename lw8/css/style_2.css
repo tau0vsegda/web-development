@@ -5,8 +5,9 @@ body
     align-items: center;
     margin-top: 0px;
     background-image: url("../images/fon.jpg");
+    /*background-size: 100%;*/
+    background-position-x: center;
     background-position-y: 50px;
-    background-size: 100%;
     background-repeat: no-repeat;
     margin: 0px;
 
@@ -103,24 +104,13 @@ a:hover
     position: absolute;
 }
 
-.div_footer
-{
-    background-color: #E5E5E5;
-    width: 100%;
-    display: inline-flex;
-    flex-direction: column;
-}
-
 footer
 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 500;
     color: #555555;
-    flex-direction: column;
-    margin:auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-
+    margin-left: 0px;
+    margin-top: 46px;
 }
 
 /*меню*/
@@ -260,12 +250,28 @@ footer
 }
 
 /*фильмы*/
+.backgr
+{
+    background-color: #E5E5E5;
+    width: 100%;
+    display: inline-flex;
+    flex-direction: column;
+}
+
+
 .likely_film
 {
-    align-items: right;
-    width: 1200px;
+    flex-direction: column;
+    margin: auto;
+    width: 1418px;
     margin-top: 0;
 }
+
+.h2
+{
+    margin-left: 109px;
+}
+
 .films
 {
     margin-top: 30px;
@@ -282,7 +288,7 @@ footer
     border-radius: 5px;
 }
 
-.p_for_film
+.p_for_ffilm
 {
     font-size: 17px;
     line-height: 28px;
@@ -290,12 +296,28 @@ footer
     margin-bottom: 26px;
 }
 
-/*кнопка*/
+/*кнопки*/
+.button_left
+{
+    width: 70px;
+    height: 70px;
+    margin-top: 60px;
+    margin-right: 39px;
+}
+
+.button_right
+{
+    width: 70px;
+    height: 70px;
+    margin-top: 60px;
+    margin-left: 39px;
+}
+
 .button
 {
-    margin-left: 480px;
+    margin-left: 589px;
     margin-top: 28px;
-    margin-bottom: 96px;
+    margin-bottom: 50px;
     width: 220px;
     height: 50px;
     border-radius: 5px;
