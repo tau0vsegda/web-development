@@ -14,15 +14,15 @@
       <div class="div_menu">
         <div class="menu_item" >
           <img class="icon" src="images/about_me.png" alt=""/>
-          <p class="p_for_menu"> Обо мне </p>
+          <p class="p_menu"> Обо мне </p>
         </div>
         <div class="menu_item">
           <img class="icon" src="images/hobby.png" alt="">
-          <p class="p_for_menu"> Моё хобби </p>
+          <p class="p_menu"> Моё хобби </p>
         </div>
         <div class="menu_item">
           <img class="icon" src="images/film.png" alt="">
-          <p class="p_for_menu"> Любимые фильмы </p>
+          <p class="p_menu"> Любимые фильмы </p>
         </div>
       </div>
     </div>
@@ -31,8 +31,8 @@
       <img class="photo" src="images/web1.jpg" alt="Хмм" />
       <div class="quote">
         <div>
-          <p class="p_for_quote">Меня трудно найти, легко потерять и невозможно забыть...</p> 
-          <p class="p_for_autor">— Комар</p>
+          <p class="p_quote">Меня трудно найти, легко потерять и невозможно забыть...</p> 
+          <p class="p_autor">&mdash; Комар</p>
         </div>
       </div>
     </div> 
@@ -80,11 +80,10 @@
     <div class="likely_film">
       <h2 class="h2">Любимые фильмы</h2>
       <div class="films">
-        <div class = "button_left">
-          <input id="left" type="button" onclick="onLeft()" />
-        </div>
+        <input id="left" type="button" onclick="onLeft()" />
 
-        <div class="film">
+
+        <div id="film_1" class="visible_film_1">
           <img class="photo_film" src="images/whenthecry.jpg" alt="Когда плачут цикады">
           <h4>Когда плачут цикады</h4>
           <p class="p_for_film">
@@ -92,7 +91,7 @@
           </p>
         </div>
 
-        <div class="film">
+        <div id="film_2" class="visible_film_2">
           <img class="photo_film" src="images/codegeass.jpg" alt="Код Гиас">
           <h4>Код Гиас</h4>
           <p class="p_for_film">
@@ -100,7 +99,7 @@
           </p>
         </div>
 
-        <div class="film">
+        <div id="film_3" class="visible_film_3">
           <img class="photo_film" src="images/country.jpg" alt="Город, в котором меня нет">
           <h4>Город, в котором меня нет</h4>
           <p class="p_for_film">
@@ -108,7 +107,7 @@
           </p>
         </div>
 
-        <div class="film">
+        <div id="film_4" class="visible_film_4">
           <img class="photo_film" src="images/steine.jpg" alt="Врата Штейна">
           <h4>Врата Штейна</h4>
           <p class="p_for_film">
@@ -116,7 +115,7 @@
           </p>
         </div>
 
-        <div class="invisible_film">
+        <div id="film_5" class="invisible_film">
           <img class="photo_film" src="images/assassination.jpg" alt="Класс убийц">
           <h4>Класс убийц</h4>
           <p class="p_for_film">
@@ -124,7 +123,7 @@
           </p>
         </div>
 
-        <div class="invisible_film">
+        <div id="film_6" class="invisible_film">
           <img class="photo_film" src="images/castle.jpg" alt="Ходячий замок">
           <h4>Ходячий замок</h4>
           <p class="p_for_film">
@@ -132,7 +131,7 @@
           </p>
         </div>
 
-        <div class="invisible_film">
+        <div id="film_7" class="invisible_film">
           <img class="photo_film" src="images/parasite.jpg" alt="Паразиты">
           <h4>Паразиты</h4>
           <p class="p_for_film">
@@ -140,7 +139,7 @@
           </p>
         </div>
 
-        <div class="invisible_film">
+        <div id="film_8" class="invisible_film">
           <img class="photo_film" src="images/doctor.jpg" alt="Доктор Кто">
           <h4>Доктор Кто</h4>
           <p class="p_for_film">
@@ -148,7 +147,7 @@
           </p>
         </div>
 
-        <div class="invisible_film">
+        <div id="film_9" class="invisible_film">
           <img class="photo_film" src="images/meninblack.jpg" alt="Люди в чёрном">
           <h4>Люди в чёрном</h4>
           <p class="p_for_film">
@@ -156,7 +155,7 @@
           </p>
         </div>
 
-        <div class="invisible_film">
+        <div id="film_10" class="invisible_film">
           <img class="photo_film" src="images/harry.jpg" alt="Гарри Поттер">
           <h4>Гарри Поттер</h4>
           <p class="p_for_film">
