@@ -5,7 +5,6 @@ body
     align-items: center;
     margin-top: 0px;
     background-image: url("../images/fon.jpg");
-    /*background-size: 100%;*/
     background-position-x: center;
     background-position-y: 50px;
     background-repeat: no-repeat;
@@ -60,10 +59,26 @@ h4
 
 h5
 {
+    margin: 30px;
+    margin-top: 0px;
+    margin-bottom: 70px;
     font-family: "Open Sans";
     color: #333333;
     font-weight: 100;
     font-size: 35px;
+}
+
+.write_me
+{
+    display: inline-flex;
+}
+
+.before_after_h5
+{
+    margin-top: 24px;
+    height: 1px;
+    width: 200px;
+    background-color: #333333;
 }
 
 /*текст*/
@@ -280,6 +295,7 @@ footer
     width: 100%;
     display: inline-flex;
     flex-direction: column;
+    margin-bottom: 41px;
 }
 
 
@@ -397,11 +413,11 @@ footer
     margin-right: 20px;
 }
 
-.button
+.button_film
 {
-    margin-left: 590px;
+    margin-left: 600px;
     margin-top: 29px;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
     width: 220px;
     height: 50px;
     border-radius: 5px;
@@ -412,7 +428,7 @@ footer
     color: #ffffff;
 }
 
-.button:hover
+.button_film:hover
 {
     background-color: #098d72;
 } 
@@ -423,3 +439,92 @@ footer
 {
     opacity: 0;
 }
+
+form
+{
+    padding-left: 6px;
+}
+span
+{
+    font-family: "Open Sans";
+    font-size: 20px;
+    color: #333333;
+    margin-left: 2px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+.span_asterisk::after
+{
+    content: "*";
+    margin-left: 5px;
+    font-weight: 600;
+    color: #ef0707;
+}
+
+input
+{
+    width: 532px;
+    height: 45px;
+    margin-top: 5px;
+    margin-left: 3px;
+    border-radius: 4px;
+    margin-bottom: 26px;
+}
+
+select
+{
+    margin-left: 3px;
+    margin-top: 7px;
+    margin-bottom: 44px;
+    width: 540px;
+    height: 49px;
+    border-radius: 4px;
+    font: 400 18px/32px "Open Sans";
+    vertical-align: middle;
+    padding-left: 17px;
+    -webkit-appearance: none;
+}
+
+.radio
+{
+    height: 11px;
+    width: 11px;
+    padding: 1px;
+    margin-right: 5px;
+    margin-top: 19px;
+    margin-bottom: 47px;
+    color: #333333;
+}
+
+label
+{
+    font-family: "Open Sans";
+    font-size: 18px;
+    margin-right: 36px;
+}
+
+.message
+{
+    height: 144px;
+    margin-left: 3px;
+}
+
+.button_form
+{
+    margin-top:25px;
+    margin-bottom: 60px;
+    width: 220px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    background-color: #15a98c;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 19px;
+    color: #ffffff;
+}
+
+.button_form:hover
+{
+    background-color: #098d72;
+} 

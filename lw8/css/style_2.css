@@ -72,24 +72,38 @@ ul
     font-family: Georgia, 'Times New Roman', Times, serif;
     padding: 0;
     list-style-position: inside;
-    margin: 19px 0;
+    margin-top: 17px;
+    margin-left: 21px;
     margin-bottom: 48px;
-    border-left: 0;
+    list-style-position: outside;
+}
+
+ol
+{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 0;
+    list-style-position: inside;
+    margin-left: 20px;
+    margin-bottom: 48px;
+    list-style-position: outside;
+    position: absolute;
 }
 
 li
 {
     font-size: 19px;
     margin: 15px 4px;
-    margin-left: 0;
-    border-left: 0;
+    margin-left: 0px;
 }
 
 a
 {
-    color: #15a98c;
+    
     font: 19px Georgia, 'Times New Roman', Times, serif;
     position: relative;
+    text-decoration: none;
+    border-bottom: 1px solid;
+    color: #15a98c;
 }
 
 a:hover
@@ -102,6 +116,7 @@ a:hover
     content: "→";
     display: inline;
     position: absolute;
+    margin-left: 4px;
 }
 
 footer
@@ -157,13 +172,13 @@ footer
     filter: brightness(4);
 }
 
-.p_for_menu
+.p_menu
 {
     margin-top: 0;
     padding-top: 0;
 }
 
-.menu_item:hover>.p_for_menu
+.menu_item:hover>.p_menu
 {
     color: #ffffff;
 }
@@ -193,28 +208,29 @@ footer
     margin-left: 330px;
     display: flex;
     align-items: center;
-    padding-bottom: 14px;
+    padding-bottom: 17px;
+    padding-left: 1px;
 
 }
 
-.p_for_quote
+.p_quote
 {
-    font: 29px/42px Georgia, 'Times New Roman', Times, serif;
+    font: 28px/42px Georgia, 'Times New Roman', Times, serif;
     font-style: italic;
     color: #ffffff;
     margin-left: 62px;
     margin-bottom: 7px;
 }
 
-.p_for_autor
+.p_autor
 {
     color: #ffffff;
     font-family: "Open Sans";
-    font-size: 17px;
+    font-size: 15.5px;
     font-weight: 600;
     margin-top: 0px;
     margin-bottom: 0px;
-    margin-left: 62px;
+    margin-left: 66px;
 }
 
 /*информация обо мне*/
@@ -222,6 +238,7 @@ footer
 {
     display: inline-flex;
     margin-top: 0;
+    margin-bottom: 50px;
 }
 
 .like
@@ -229,7 +246,7 @@ footer
     width: 330px;
     margin-right: 60px;
     margin-left: 0;
-    margin-top: 173px;
+    margin-top: 172px;
     border-left: 0;
 }
 
@@ -252,7 +269,7 @@ footer
 /*фильмы*/
 .backgr
 {
-    background-color: #E5E5E5;
+    background-color: rgba(229, 229, 229, 0.23);
     width: 100%;
     display: inline-flex;
     flex-direction: column;
@@ -263,13 +280,14 @@ footer
 {
     flex-direction: column;
     margin: auto;
-    width: 1418px;
+    width: 1422px;
     margin-top: 0;
 }
 
 .h2
 {
-    margin-left: 109px;
+    margin-top: 31px;
+    margin-left: 111px;
 }
 
 .films
@@ -288,7 +306,7 @@ footer
     border-radius: 5px;
 }
 
-.p_for_ffilm
+.p_film
 {
     font-size: 17px;
     line-height: 28px;
@@ -297,27 +315,86 @@ footer
 }
 
 /*кнопки*/
-.button_left
+#left
 {
+    background-color: #15A98C;
+    background-image: url("../images/left.png");
     width: 70px;
     height: 70px;
-    margin-top: 60px;
-    margin-right: 39px;
+    margin-top: 64px;
+    margin-right: 40px;
+    padding: 0px;
+    border: 2px solid rgba(0, 0, 0, 0);
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    order: 1;
 }
 
-.button_right
+#left:focus
 {
+    outline: none;
+    border-color: rgba(100, 100, 100, 1);
+}
+
+#right
+{
+    background-color: #15A98C;
+    background-image: url("../images/right.png");
     width: 70px;
     height: 70px;
-    margin-top: 60px;
-    margin-left: 39px;
+    margin-top: 64px;
+    margin-left: 20px;
+    padding: 0px;
+    border: 2px solid rgba(0, 0, 0, 0);
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    order: 6;
+}
+
+#right:focus
+{
+    outline: none;
+    border-color: rgba(100, 100, 100, 1);
+}
+
+.invisible_film
+{
+    display: none;
+}
+
+.visible_film_1
+{
+    order: 2;
+    width: 285px;
+    margin-right: 20px;
+}
+
+.visible_film_2
+{
+    order: 3;
+    width: 285px;
+    margin-right: 20px;
+}
+
+.visible_film_3
+{
+    order: 4;
+    width: 285px;
+    margin-right: 20px;
+}
+
+.visible_film_4
+{
+    order: 5;
+    width: 285px;
+    margin-right: 20px;
 }
 
 .button
 {
-    margin-left: 589px;
-    margin-top: 28px;
-    margin-bottom: 50px;
+    margin-left: 590px;
+    margin-top: 29px;
+    margin-bottom: 60px;
     width: 220px;
     height: 50px;
     border-radius: 5px;
@@ -331,4 +408,11 @@ footer
 .button:hover
 {
     background-color: #098d72;
+} 
+
+
+
+.hidden_film
+{
+    opacity: 0;
 }

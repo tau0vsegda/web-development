@@ -3,7 +3,7 @@
   <head>
     <meta charset=utf-8>
     <title>информация обо мне</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:0,100,600,700,500,400,800,900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,600,700,500,400,800,900&display=swap" rel="stylesheet" />
     <link href="css/style_2.css" rel="stylesheet" />
     <script src="js/film.js"></script>
   </head>
@@ -165,10 +165,45 @@
           
           <input id="right" type="button" src="images/right.png" onclick="onRight()" />
         </div>
-      <input type= "button" value= "Все фильмы" class="button" />
+      <input type= "button" value= "Все фильмы" class="button_film" />
       </div>
     </div>
-    <h5>НАПИШИ МНЕ</h5>
+    <div class="write_me">
+      <div class="before_after_h5"></div>
+      <h5>НАПИШИ МНЕ</h5>
+      <div class="before_after_h5"></div>
+    </div>
+    <form>
+      <span class="span_asterisk">Ваше имя</span><br />
+      <input type="text" name="name" value="" /><br />
+      <span class="span_asterisk">Ваш email</span><br />
+      <input type="text" name="email" value="" /><br />
+      <span>Откуда вы?</span><br />
+      <select>
+        <option>Россия</option>
+        <option>Украина</option>
+        <option>Вьетнам</option>
+        <option>Китай</option>
+        <option>Южная Корея</option>
+        <option>Япония</option>
+        <option>Люксембург</option>
+        <option>Пакистан</option>
+        <option>Тайвань</option>
+        <option>Тайвань</option>
+        <option>Норвегия</option>
+        <option>Румыния</option>
+        <option>Другая</option>
+      </select><br />
+      <span>Ваш пол</span><br />
+      <input type="radio" name="gender" value="male" checked class="radio"/>
+      <label>Мужской</label>
+      <input type="radio" name="gender" value="female" class="radio"/>
+      <label>Женский</label><br />
+      <span class="span_asterisk">Ваше сообщение</span><br />
+      <input type="text" name="message" value="" class="message" /><br />
+      <input type="submit" value="Отправить" class="button_form" /><br />
+    </form>
+
     <footer>
       © 2006-2018 Поволжский государственный технологический университет, ФГБОУ ВО «‎ПГТУ»
     </footer>
